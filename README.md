@@ -1,221 +1,367 @@
 # CalmCreate
 
-CalmCreate helps entrepreneurs turn ideas into ready-to-film social media content through a guided, step-by-step workflow. It provides content scripts, filming guidance, and platform-specific support to reduce overwhelm and improve consistency.
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)  
+![Status](https://img.shields.io/badge/status-active-success.svg)  
+![Built with](https://img.shields.io/badge/Built%20with-React-blue)
+
+> **Note:** This is a prototype application developed for academic purposes. Some features (e.g., posting, billing, and analytics) are simulated and not connected to live platform APIs.
+
+CalmCreate is an AI-powered social media content application designed to help newcomer entrepreneurs in Canada create short-form content with clarity, confidence, and consistency. It guides users from idea to execution through structured, step-by-step support that reduces uncertainty and enables action.
 
 ---
 
-## Live App
+## Table of contents
 
-[Launch CalmCreate](https://279f5d98-0236-4142-b67d-ee60b61efbd9-00-3fbd5vj7e3yi7.janeway.replit.dev/)
+- [Overview](#overview)  
+- [Problem](#problem)  
+- [Solution](#solution)  
+- [Target users](#target-users)  
+- [Core workflow](#core-workflow)  
+- [How to use the application](#how-to-use-the-application)  
+- [Features](#features)  
+- [Implementation status](#implementation-status)  
+- [Development process](#development-process)  
+- [Challenges and learnings](#challenges-and-learnings)  
+- [Technology stack](#technology-stack)  
+- [Installation and setup](#installation-and-setup)  
+- [Known limitations](#known-limitations)  
+- [Example output](#example-output)  
+- [Screenshots](#screenshots)  
+- [Future improvements](#future-improvements)  
+- [License](#license)  
+- [Team](#team)  
 
-## Video Demo
+---
 
-[Watch the 3-minute walkthrough](https://your-video-link.com)
+## Live application
+
+https://279f5d98-0236-4142-b67d-ee60b61efbd9-00-3fbd5vj7e3yi7.janeway.replit.dev/
+
+---
+
+## Video walkthrough (≤ 3 minutes)
+
+Demo video available upon request.
 
 ---
 
 ## Overview
 
-CalmCreate is an AI-assisted content execution tool that helps entrepreneurs move from idea to execution through a structured workflow.
+CalmCreate addresses a key challenge in digital entrepreneurship: many individuals are motivated to build a business or personal brand but lack the direction and clarity needed to execute effectively. The application focuses on helping users move from uncertainty to consistent action in content creation.
 
 ---
 
 ## Problem
 
-Many entrepreneurs struggle with:
-- Knowing what to post  
-- Understanding how to film content  
-- Adapting content to different platforms  
-- Staying consistent  
+Newcomer entrepreneurs in Canada often face challenges that go beyond simply starting a business — they must navigate an unfamiliar digital and cultural environment.
 
-Existing tools focus on inspiration rather than execution.
+Key challenges include:
+
+- uncertainty about what content works in the Canadian market  
+- cultural hesitation and fear of posting something inappropriate  
+- not knowing how to film or structure content  
+- inconsistent posting habits  
+- overthinking content decisions  
+- eventual lack of action despite strong intentions  
+
+Without structure and feedback, users hesitate, second-guess their ideas, and often stop creating content altogether. The core issue is not effort — it is a lack of clarity and confidence.
 
 ---
 
 ## Solution
 
-CalmCreate provides a structured system that transforms simple ideas into actionable content by combining:
-- AI-assisted content generation  
-- Step-by-step filming guidance  
-- Platform-aware instructions  
+To address this gap, CalmCreate provides a guided, AI-assisted workflow that transforms simple inputs into clear, actionable steps.
+
+The system:
+
+- learns user preferences such as business type and comfort level  
+- generates relevant content ideas aligned with user context  
+- converts a single input into a complete, ready-to-film content workflow  
+- provides captions, hashtags, and filming guidance  
+- guides users through execution from start to finish  
+
+### Core value proposition
+
+CalmCreate is a **decision-support and execution system**, not just a content generator. It reduces uncertainty, minimizes overthinking, and enables users to take consistent action in an unfamiliar digital environment.
 
 ---
 
-## Target Users
+## Target users
 
-- Newcomer entrepreneurs in Canada  
-- Small business owners  
-- Non-technical users  
-- Individuals new to content creation  
+CalmCreate is designed for:
 
----
-
-## How It Works
-
-1. Complete onboarding questions  
-2. Describe your post idea  
-3. Receive a structured content kit  
-4. Follow guided filming steps  
-5. Complete and publish content  
+- newcomer entrepreneurs in Canada  
+- individuals building a business or personal brand  
+- early-stage content creators  
+- users with limited experience in social media or marketing  
 
 ---
 
-## Core Features
+## Core workflow
 
-### Content Kit Generator
-- Scripts or B-roll ideas  
-- Captions  
-- Hashtags  
-- Filming checklist  
+1. user signs in  
+2. enters business type and content idea  
+3. selects comfort level (face or faceless)  
+4. selects posting format  
+5. receives a structured content kit  
+6. follows guided filming instructions  
+7. uses camera guide for framing  
+8. marks content as complete  
+9. copies caption and opens platform  
 
-### Platform-Aware Guidance
-Supports:
+---
+
+## How to use the application
+
+1. sign in to the application  
+2. enter your business type and content idea  
+3. choose your comfort level (on-camera or faceless)  
+4. select a posting format  
+5. review the generated content kit  
+6. follow the filming steps provided  
+7. copy the caption and post on your preferred platform  
+
+---
+
+## Features
+
+### Content kit generation
+
+Converts a single user input into a complete content workflow including:
+
+- content idea  
+- explanation of relevance  
+- script or B-roll plan  
+- caption  
+- hashtags  
+- filming checklist  
+
+---
+
+### Voice-to-content
+
+Transforms user input into:
+
+- a ready-to-use script, or  
+- a structured B-roll shot plan  
+
+---
+
+### Platform-aware guidance
+
+Adapts content based on platform requirements:
+
 - TikTok  
-- Instagram  
+- Instagram (reel, story, feed)  
 - Facebook  
 
-Includes:
-- Format-specific instructions  
-- Framing guidance  
-- Pacing recommendations  
-
-### Camera Guide
-- Visual framing assistance  
-- Filming overlays  
-- Fallback simulation if the camera is unavailable  
-
-### Hub System (4 Tabs)
-- Templates: Content creation and trends  
-- Hub: Growth insights and tips  
-- Planner: Content consistency  
-- Engagement: Comments and replies  
-
-### Social Media Integration
-- Connect Instagram, TikTok, and Facebook  
-- Display connection status  
-- OAuth-based authentication (when configured)  
-
-### AI Help and FAQ
-- Practical AI-generated support  
-- Built-in frequently asked questions  
-
-### Free vs Premium Model
-- Free: 3 posts per day  
-- Premium: Unlimited posts  
-
-### Prompt Recall
-- Remembers previous inputs for 24 hours  
-- Improves workflow efficiency  
-
-### Multilingual Support
-- Scalable localization system  
-- Supports future expansion  
+Adjustments include orientation, pacing, framing, and safe zones.
 
 ---
 
-## Example Output
+### Comfort-based creation
 
-**User Input:**  
-"I'm overwhelmed with orders but grateful my business is growing."
+Supports both:
 
-**Generated Output:**
-- Script: “I didn’t expect this… 20 orders today, and I’m exhausted but grateful.”  
-- B-roll: Packing boxes, printing labels, sealing packages  
-- Caption: “Growth comes with pressure, but I’m grateful for every order.”  
-- Hashtags: #smallbusiness #entrepreneurlife #growth  
+- on-camera content  
+- faceless content  
 
 ---
 
-## System Overview
+### Camera guide
 
-- Frontend: React  
-- Backend: Node.js  
-- Database: PostgreSQL  
-
----
-
-## Tech Stack
-
-**Frontend**
-- React  
-- JavaScript  
-- HTML/CSS  
-
-**Backend**
-- Node.js  
-
-**Database**
-- PostgreSQL  
-
-**Tools**
-- Replit  
-- ChatGPT  
+Provides visual framing support and positioning guidance.  
+Camera access requires user permission and a compatible browser environment.
 
 ---
 
-## AI-Assisted Development
+### Simulated posting workflow
 
-AI tools were used for:
-- Ideation  
-- Prompt design  
-- UI generation  
-- Debugging  
-- Documentation  
+Allows users to:
 
-All outputs were reviewed and refined before integration.
+- copy captions  
+- open target platforms  
+- restart the workflow  
 
 ---
 
-## Reliability and Improvements
+### Authentication and accounts
 
-- Atomic usage tracking to prevent race conditions  
-- Database constraints for consistency  
-- Protected API endpoints  
-- Improved session handling  
-- Error boundary for crash prevention  
-- Enhanced error handling  
+Supports:
 
----
-
-## Business Model
-
-**Free Plan**
-- 3 posts per day  
-
-**Premium Plan**
-- Unlimited posts  
-- Expanded features  
+- user sign-in  
+- session management  
+- profile access  
 
 ---
 
-## Limitations
+### Freemium model
 
-- No real-time trend analysis  
-- Limited personalization  
-- Some features operate in demo mode  
-- External APIs required for full social posting  
+- free plan: 1 post per day  
+- premium plan: unlimited posts ($5.99/month)  
 
 ---
 
-## Future Improvements
+### Prompt recall
 
-- Advanced personalization  
-- Analytics dashboard  
-- Automated scheduling  
-- Improved trend insights  
-- Deeper platform integrations  
+Stores recent inputs for 24 hours for reuse.
+
+---
+
+## Implementation status
+
+### Implemented
+
+- content generation workflow  
+- platform-aware formatting  
+- camera guide interface  
+- authentication and sessions  
+- usage tracking  
+- prompt recall  
+- simulated posting  
+
+### Simulated
+
+- platform publishing  
+- billing and subscriptions  
+- analytics  
+
+### Planned
+
+- real-time trend detection  
+- scheduling automation  
+- templates and content planning tools  
+- advanced personalization  
+
+---
+
+## Development process
+
+CalmCreate was developed using Replit alongside AI tools including ChatGPT, Copilot, and Gemini.
+
+AI was used to:
+
+- generate React components  
+- implement workflow logic  
+- debug system issues and conflicts  
+
+For example, modifying prompt logic occasionally impacted unrelated features, requiring iterative testing and refinement.
+
+---
+
+## Challenges and learnings
+
+### Challenges
+
+- AI requires constant refinement and precise instructions  
+- integration with external platforms is complex  
+- feature updates can introduce instability  
+- managing version control requires coordination  
+
+### Key learnings
+
+- simplicity improves usability  
+- clear guidance reduces user friction  
+- small changes can affect system behavior  
+- continuous testing is essential  
+
+---
+
+## Technology stack
+
+**Frontend:** React (Vite), JavaScript, HTML/CSS  
+**Backend:** Node.js  
+**Database:** PostgreSQL  
+**Authentication:** OIDC (Replit environment)  
+**Tools:** Replit, ChatGPT, GitHub  
+
+---
+
+## Installation and setup
+
+```bash
+git clone https://github.com/jamshedx7/CalmCreate.git
+cd CalmCreate
+npm install
+npm run dev
+```
+---
+## Known limitations
+
+- Limited platform integration (manual posting required)
+- Personalization is still improving
+- AI may not fully capture cultural nuance
+- Data privacy considerations as the platform scales
+- Usage limits for free users
+- No real-time trend detection
+- Camera requires browser permission
+
+---
+
+## Example output
+
+**Input:**  
+“I’m overwhelmed with orders but grateful my business is growing.”
+
+**Output includes:**
+- Script or B-roll plan
+- Caption
+- Hashtags
+- Filming steps
 
 ---
 
 ## Screenshots
 
-Add images in the `/screenshots/` folder.
+### Login screen
+![Login](screenshots/01-login.png)
+
+### Onboarding and user input
+![Onboarding](screenshots/02-onboarding.png)
+
+### Generated content kit
+![Content Kit](screenshots/03-content-kit.png)
+
+### Camera guide and framing support
+![Camera Guide](screenshots/04-camera-guide.png)
+
+### Guided workflow and checklist
+![Workflow](screenshots/05-workflow.png)
+
+### Final output and posting step
+![Final Output](screenshots/06-final-output.png)
 
 ---
 
-## Getting Started
+## Future improvements
 
-### 1. Clone the repository
-```bash
-git clone https://github.com/jamshedx7/CalmCreate.git
-cd CalmCreate
+- AI-assisted video editing
+- Performance insights and analytics
+- Direct platform integration
+- Content templates and planning tools
+- Geographic expansion
+
+---
+
+## License
+
+This project is licensed under the MIT License.  
+See the LICENSE file for details.
+
+---
+
+## Team
+
+- Kadi
+- Jamshed
+- Feyre
+- Mohit
+- Marcy
+
+---
+
+## Final statement
+
+CalmCreate bridges the gap between thinking and doing. By transforming uncertainty into structured action, it enables users to consistently create, build confidence, and grow their digital presence over time.
+
+---
