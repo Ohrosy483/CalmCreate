@@ -110,7 +110,7 @@ CalmCreate is designed for:
 5. Receives a structured content kit  
 6. Follows guided filming instructions  
 7. Uses camera guide for framing  
-8. Marks content as complete  
+8. Reviews the generated output  
 9. Copies caption and opens platform  
 
 ---
@@ -316,6 +316,8 @@ npm run dev
 - Filming steps
 
 ---
+
+## Screenshots
 
 ### Login and authentication
 ![Login and authentication](screenshots/02-login-auth.png)
