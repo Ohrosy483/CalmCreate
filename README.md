@@ -41,7 +41,7 @@ https://279f5d98-0236-4142-b67d-ee60b61efbd9-00-3fbd5vj7e3yi7.janeway.replit.dev
 
 ## Video walkthrough (≤ 7 minutes)
 
-[Demo video available upon request.](https://youtu.be/vAZzZGJAFCk)
+[(https://youtu.be/vAZzZGJAFCk)]
 
 ---
 
