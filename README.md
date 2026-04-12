@@ -326,7 +326,7 @@ npm run dev
 ![Login and authentication](screenshots/02-login-auth.png)
 
 ### Onboarding – business type selection
-![Business type selection](screenshots/03-onboarding-business.png)
+![Business type selection](screenshots/03-onboarding-business-type.png)
 
 ### Onboarding – language preference
 ![Language preference](screenshots/04-onboarding-language.png)
