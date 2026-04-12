@@ -35,13 +35,13 @@ CalmCreate is an AI-powered social media content application designed to help ne
 
 ## Live application
 
-https://279f5d98-0236-4142-b67d-ee60b61efbd9-00-3fbd5vj7e3yi7.janeway.replit.dev/
+[Open CalmCreate](https://279f5d98-0236-4142-b67d-ee60b61efbd9-00-3fbd5vj7e3yi7.janeway.replit.dev/)
 
 ---
 
 ## Video walkthrough (≤ 7 minutes)
 
-https://youtu.be/vAZzZGJAFCk
+[Watch the demo (≤ 7 minutes)]https://youtu.be/vAZzZGJAFCk
 
 ---
 
@@ -313,23 +313,38 @@ npm run dev
 
 ## Screenshots
 
-### Login screen
-![Login](screenshots/01-login.png)
+### Landing page – introduction to CalmCreate
+![Landing Page](screenshots/01-landing-page.png)
 
-### Onboarding and user input
-![Onboarding](screenshots/02-onboarding.png)
+### Login and authentication
+![Login and authentication](screenshots/02-login-auth.png)
 
-### Generated content kit
-![Content Kit](screenshots/03-content-kit.png)
+### Onboarding – country selection
+![Country selection](screenshots/03-onboarding-country.png)
 
-### Camera guide and framing support
-![Camera Guide](screenshots/04-camera-guide.png)
+### Onboarding – language preference
+![Language preference](screenshots/04-onboarding-language.png)
 
-### Guided workflow and checklist
-![Workflow](screenshots/05-workflow.png)
+### Onboarding – content comfort level (on/off camera)
+![Content comfort level](screenshots/05-onboarding-comfort.png)
 
-### Final output and posting step
-![Final Output](screenshots/06-final-output.png)
+### Onboarding – target audience
+![Target audience](screenshots/06-onboarding-target.png)
+
+### Onboarding – posting frequency
+![Posting frequency](screenshots/07-onboarding-frequency.png)
+
+### AI-generated content kit
+![AI-generated content kit](screenshots/08-content-kit.png)
+
+### Filming guidance (camera positioning)
+![Filming guidance](screenshots/09-camera-guide.png)
+
+### Workflow from idea to completion
+![Workflow](screenshots/10-workflow.png)
+
+### Final output – ready-to-post content
+![Final output](screenshots/11-final-output.png)
 
 ---
 
