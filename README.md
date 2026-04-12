@@ -4,7 +4,11 @@
 ![Status](https://img.shields.io/badge/status-active-success.svg)  
 ![Built with](https://img.shields.io/badge/Built%20with-React-blue)
 
-> **Note:** This is a prototype application developed for academic purposes. Some features (e.g., posting, billing, and analytics) are simulated and not connected to live platform APIs.
+> **Note:** This is a prototype application developed for academic purposes. Some features (e.g., posting, billing, analytics, and music integration) are simulated and not connected to live platform APIs.
+
+> Due to copyright and licensing requirements, trending audio can be referenced but not fully integrated into ready-to-post content. Full functionality requires platform-level licensing agreements and compliance with platform approval processes.
+
+> CalmCreate would support seamless posting, real-time trend synchronization, and full integration of licensed audio through appropriate platform partnerships.
 
 CalmCreate is an AI-powered social media content application designed to help newcomer entrepreneurs in Canada create short-form content with clarity, confidence, and consistency. It guides users from idea to execution through structured, step-by-step support that reduces uncertainty and enables action.
 
@@ -35,13 +39,13 @@ CalmCreate is an AI-powered social media content application designed to help ne
 
 ## Live application
 
-[Open CalmCreate](https://279f5d98-0236-4142-b67d-ee60b61efbd9-00-3fbd5vj7e3yi7.janeway.replit.dev/)
+[Open CalmCreate (demo)](https://279f5d98-0236-4142-b67d-ee60b61efbd9-00-3fbd5vj7e3yi7.janeway.replit.dev/)
 
 ---
 
 ## Video walkthrough (≤ 7 minutes)
 
-[Watch the demo (≤ 7 minutes)]https://youtu.be/vAZzZGJAFCk
+[Watch the demo (≤ 7 minutes)](https://youtu.be/vAZzZGJAFCk)
 
 ---
 
@@ -57,12 +61,12 @@ Newcomer entrepreneurs in Canada often face challenges that go beyond simply sta
 
 Key challenges include:
 
-- uncertainty about what content works in the Canadian market  
-- cultural hesitation and fear of posting something inappropriate  
-- not knowing how to film or structure content  
-- inconsistent posting habits  
-- overthinking content decisions  
-- eventual lack of action despite strong intentions  
+- Uncertainty about what content works in the Canadian market  
+- Cultural hesitation and fear of posting something inappropriate
+- Not knowing how to film or structure content  
+- Inconsistent posting habits  
+- Overthinking content decisions  
+- Eventual lack of action despite strong intentions  
 
 Without structure and feedback, users hesitate, second-guess their ideas, and often stop creating content altogether. The core issue is not effort — it is a lack of clarity and confidence.
 
@@ -74,11 +78,11 @@ To address this gap, CalmCreate provides a guided, AI-assisted workflow that tra
 
 The system:
 
-- learns user preferences such as business type and comfort level  
-- generates relevant content ideas aligned with user context  
-- converts a single input into a complete, ready-to-film content workflow  
-- provides captions, hashtags, and filming guidance  
-- guides users through execution from start to finish  
+- Learns user preferences such as business type and comfort level  
+- Generates relevant content ideas aligned with user context  
+- Converts a single input into a complete, ready-to-film content workflow  
+- Provides captions, hashtags, and filming guidance  
+- Guides users through execution from start to finish  
 
 ### Core value proposition
 
@@ -90,36 +94,36 @@ CalmCreate is a **decision-support and execution system**, not just a content ge
 
 CalmCreate is designed for:
 
-- newcomer entrepreneurs in Canada  
-- individuals building a business or personal brand  
-- early-stage content creators  
-- users with limited experience in social media or marketing  
+- Newcomer entrepreneurs in Canada  
+- Individuals building a business or personal brand  
+- Early-stage content creators  
+- Users with limited experience in social media or marketing  
 
 ---
 
 ## Core workflow
 
-1. user signs in  
-2. enters business type and content idea  
-3. selects comfort level (face or faceless)  
-4. selects posting format  
-5. receives a structured content kit  
-6. follows guided filming instructions  
-7. uses camera guide for framing  
-8. marks content as complete  
-9. copies caption and opens platform  
+1. User signs in  
+2. Enters business type and content idea  
+3. Selects comfort level (face or faceless)  
+4. Selects posting format  
+5. Receives a structured content kit  
+6. Follows guided filming instructions  
+7. Uses camera guide for framing  
+8. Marks content as complete  
+9. Copies caption and opens platform  
 
 ---
 
 ## How to use the application
 
-1. sign in to the application  
-2. enter your business type and content idea  
-3. choose your comfort level (on-camera or faceless)  
-4. select a posting format  
-5. review the generated content kit  
-6. follow the filming steps provided  
-7. copy the caption and post on your preferred platform  
+1. Sign in to the application  
+2. Enter your business type and content idea  
+3. Choose your comfort level (on-camera or faceless)  
+4. Select a posting format  
+5. Review the generated content kit  
+6. Follow the filming steps provided  
+7. Copy the caption and post on your preferred platform  
 
 ---
 
@@ -129,12 +133,12 @@ CalmCreate is designed for:
 
 Converts a single user input into a complete content workflow including:
 
-- content idea  
-- explanation of relevance  
-- script or B-roll plan  
-- caption  
-- hashtags  
-- filming checklist  
+- Content idea  
+- Explanation of relevance  
+- Script or B-roll plan  
+- Caption  
+- Hashtags  
+- Filming checklist  
 
 ---
 
@@ -142,8 +146,8 @@ Converts a single user input into a complete content workflow including:
 
 Transforms user input into:
 
-- a ready-to-use script, or  
-- a structured B-roll shot plan  
+- A ready-to-use script, or  
+- A structured B-roll shot plan  
 
 ---
 
@@ -163,8 +167,8 @@ Adjustments include orientation, pacing, framing, and safe zones.
 
 Supports both:
 
-- on-camera content  
-- faceless content  
+- On-camera content  
+- Faceless content  
 
 ---
 
@@ -179,9 +183,9 @@ Camera access requires user permission and a compatible browser environment.
 
 Allows users to:
 
-- copy captions  
-- open target platforms  
-- restart the workflow  
+- Copy captions  
+- Open target platforms  
+- Restart the workflow  
 
 ---
 
@@ -189,16 +193,16 @@ Allows users to:
 
 Supports:
 
-- user sign-in  
-- session management  
-- profile access  
+- User sign-in  
+- Session management  
+- Profile access  
 
 ---
 
 ### Freemium model
 
-- free plan: 1 post per day  
-- premium plan: unlimited posts ($5.99/month)  
+- Free plan: 1 post per day  
+- Premium plan: unlimited posts ($5.99/month)  
 
 ---
 
@@ -212,26 +216,26 @@ Stores recent inputs for 24 hours for reuse.
 
 ### Implemented
 
-- content generation workflow  
-- platform-aware formatting  
-- camera guide interface  
-- authentication and sessions  
-- usage tracking  
-- prompt recall  
-- simulated posting  
+- Content generation workflow  
+- Platform-aware formatting  
+- Camera guide interface  
+- Authentication and sessions  
+- Usage tracking  
+- Prompt recall  
+- Simulated posting  
 
 ### Simulated
 
-- platform publishing  
-- billing and subscriptions  
-- analytics  
+- Platform publishing  
+- Billing and subscriptions  
+- Analytics  
 
 ### Planned
 
-- real-time trend detection  
-- scheduling automation  
-- templates and content planning tools  
-- advanced personalization  
+- Real-time trend detection  
+- Scheduling automation  
+- Templates and content planning tools  
+- Advanced personalization  
 
 ---
 
@@ -241,9 +245,9 @@ CalmCreate was developed using Replit alongside AI tools including ChatGPT, Copi
 
 AI was used to:
 
-- generate React components  
-- implement workflow logic  
-- debug system issues and conflicts  
+- Generate React components  
+- Implement workflow logic  
+- Debug system issues and conflicts  
 
 For example, modifying prompt logic occasionally impacted unrelated features, requiring iterative testing and refinement.
 
@@ -254,16 +258,16 @@ For example, modifying prompt logic occasionally impacted unrelated features, re
 ### Challenges
 
 - AI requires constant refinement and precise instructions  
-- integration with external platforms is complex  
-- feature updates can introduce instability  
-- managing version control requires coordination  
+- Integration with external platforms is complex  
+- Feature updates can introduce instability  
+- Managing version control requires coordination  
 
 ### Key learnings
 
-- simplicity improves usability  
-- clear guidance reduces user friction  
-- small changes can affect system behavior  
-- continuous testing is essential  
+- Simplicity improves usability  
+- Clear guidance reduces user friction  
+- Small changes can affect system behavior  
+- Continuous testing is essential  
 
 ---
 
@@ -367,11 +371,13 @@ See the LICENSE file for details.
 
 ## Team
 
-- Kadi
-- Jamshed
-- Feyre
-- Mohit
-- Marcy
+- Feyre  
+- Jamshed  
+- Kadi  
+- Mohit  
+- Xiaolin  
+
+*CoLLaborative development across frontend, backend, and AI integration.*
 
 ---
 
