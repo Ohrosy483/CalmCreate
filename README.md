@@ -62,7 +62,7 @@ Newcomer entrepreneurs in Canada often face challenges that go beyond simply sta
 Key challenges include:
 
 - Uncertainty about what content works in the Canadian market  
-- Cultural hesitation and fear of posting something inappropriate
+- Cultural hesitation and fear of posting something inappropriate  
 - Not knowing how to film or structure content  
 - Inconsistent posting habits  
 - Overthinking content decisions  
@@ -289,7 +289,9 @@ cd CalmCreate
 npm install
 npm run dev
 ```
+
 ---
+
 ## Known limitations
 
 - Limited platform integration (manual posting required)
