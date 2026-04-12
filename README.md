@@ -317,11 +317,6 @@ npm run dev
 
 ---
 
-## Screenshots
-
-### Landing page – introduction to CalmCreate
-![Landing Page](screenshots/01-landing-page.png)
-
 ### Login and authentication
 ![Login and authentication](screenshots/02-login-auth.png)
 
@@ -340,16 +335,16 @@ npm run dev
 ### Onboarding – posting frequency
 ![Posting frequency](screenshots/07-onboarding-frequency.png)
 
+### Content input and configuration
+![Content input](screenshots/08-content-input.png)
+
 ### AI-generated content kit
-![AI-generated content kit](screenshots/08-content-kit.png)
+![AI-generated content kit](screenshots/09-content-kit.png)
 
-### Filming guidance (camera positioning)
-![Filming guidance](screenshots/09-camera-guide.png)
+### Camera guide and recording 
+![Camera guide](screenshots/10-camera-guide.png)
 
-### Workflow from idea to completion
-![Workflow](screenshots/10-workflow.png)
-
-### Final output – ready-to-post content
+### Final output (ready-to-post)
 ![Final output](screenshots/11-final-output.png)
 
 ---
