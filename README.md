@@ -138,7 +138,6 @@ Converts a single user input into a complete content workflow including:
 - Script or B-roll plan  
 - Caption  
 - Hashtags  
-- Filming checklist  
 
 ---
 
