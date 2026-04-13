@@ -5,10 +5,8 @@
  * API specification
  * OpenAPI spec version: 0.1.0
  */
-import type { UsageStatusPlanTier } from "./usageStatusPlanTier";
 
-export interface UsageStatus {
-  postsUsed: number;
-  planTier: UsageStatusPlanTier;
-  limitReached: boolean;
-}
+/**
+ * Opaque session token — `Bearer <sid>`.
+ */
+export type AuthorizationSessionHeaderParameter = string;

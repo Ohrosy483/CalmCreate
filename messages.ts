@@ -5,19 +5,8 @@
  * API specification
  * OpenAPI spec version: 0.1.0
  */
-import type { UserProfilePlanTier } from "./userProfilePlanTier";
+import type { AuthUser } from "./authUser";
 
-export interface UserProfile {
-  userId: string;
-  planTier: UserProfilePlanTier;
-  /** @nullable */
-  displayName: string | null;
-  /** @nullable */
-  email: string | null;
-  /** @nullable */
-  firstName: string | null;
-  /** @nullable */
-  lastName: string | null;
-  /** @nullable */
-  profileImageUrl: string | null;
+export interface AuthUserEnvelope {
+  user: AuthUser | null;
 }

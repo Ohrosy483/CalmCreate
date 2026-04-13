@@ -1,0 +1,51 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+tmp/
+out-tsc/
+*.tsbuildinfo
+
+# Environment variables (never commit secrets)
+.env
+.env.*
+!.env.example
+
+# Logs
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+testem.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE / editor files
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+
+# Replit / local workspace
+.cache/
+.local/
+
+# App-generated runtime files
+uploads/
+artifacts/
+
+# AI / workspace metadata
+.agents/
+.canvas/
+.config/
+
+# Misc
+.sass-cache/
+coverage/
+libpeerconnection.log
+connect.lock
+typings/

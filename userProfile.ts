@@ -5,8 +5,16 @@
  * API specification
  * OpenAPI spec version: 0.1.0
  */
-
+import * as zod from "zod";
 /**
- * Opaque session token — `Bearer <sid>`.
+ * Returns server health status
+ * @summary Health check
  */
-export type AuthorizationSessionHeaderParameter = string;
+export declare const HealthCheckResponse: zod.ZodObject<{
+    status: zod.ZodString;
+}, "strip", zod.ZodTypeAny, {
+    status: string;
+}, {
+    status: string;
+}>;
+//# sourceMappingURL=api.d.ts.map
