@@ -319,6 +319,9 @@ npm run dev
 
 ## Screenshots
 
+### Landing page – introduction to CalmCreate  
+![Landing Page](screenshots/01-landing-page.png)
+
 ### Login and authentication
 ![Login and authentication](screenshots/02-login-auth.png)
 
