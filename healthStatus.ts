@@ -1,1 +1,1 @@
-{"version":3,"file":"index.d.ts","sourceRoot":"","sources":["../../../src/generated/types/index.ts"],"names":[],"mappings":"AAAA;;;;;;GAMG;AAEH,cAAc,gBAAgB,CAAC"}
+{"version":3,"file":"healthStatus.d.ts","sourceRoot":"","sources":["../../../src/generated/types/healthStatus.ts"],"names":[],"mappings":"AAAA;;;;;;GAMG;AAEH,MAAM,WAAW,YAAY;IAC3B,MAAM,EAAE,MAAM,CAAC;CAChB"}

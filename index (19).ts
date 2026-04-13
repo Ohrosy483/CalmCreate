@@ -6,6 +6,15 @@
  * OpenAPI spec version: 0.1.0
  */
 
-export interface UpdateProfileBody {
-  displayName?: string;
+export interface MobileTokenExchangeRequest {
+  /** @minLength 1 */
+  code: string;
+  /** @minLength 1 */
+  code_verifier: string;
+  /** @minLength 1 */
+  redirect_uri: string;
+  /** @minLength 1 */
+  state: string;
+  /** @minLength 1 */
+  nonce?: string;
 }

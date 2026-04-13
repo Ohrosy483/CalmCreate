@@ -1,52 +1,45 @@
 /**
- * React hook for voice recording using MediaRecorder API.
- * Records audio in WebM/Opus format for efficient streaming.
+ * Voice chat client utilities for Replit AI Integrations.
+ * 
+ * Usage:
+ * 1. Copy audio-playback-worklet.js to your public/ folder
+ * 2. Import and use the React hooks in your components
+ * 
+ * Example:
+ * ```tsx
+ * import { useVoiceRecorder, useVoiceStream } from "./audio";
+ * 
+ * function VoiceChat() {
+ *   const [transcript, setTranscript] = useState("");
+ *   const recorder = useVoiceRecorder();
+ *   const stream = useVoiceStream({
+ *     onTranscript: (_, full) => setTranscript(full),
+ *     onComplete: (text) => console.log("Done:", text),
+ *   });
+ * 
+ *   const handleClick = async () => {
+ *     if (recorder.state === "recording") {
+ *       const blob = await recorder.stopRecording();
+ *       await stream.streamVoiceResponse("/api/conversations/1/messages", blob);
+ *     } else {
+ *       await recorder.startRecording();
+ *     }
+ *   };
+ * 
+ *   return (
+ *     <div>
+ *       <button onClick={handleClick}>
+ *         {recorder.state === "recording" ? "Stop" : "Record"}
+ *       </button>
+ *       <p>{transcript}</p>
+ *     </div>
+ *   );
+ * }
+ * ```
  */
-import { useRef, useCallback, useState } from "react";
 
-export type RecordingState = "idle" | "recording" | "stopped";
-
-export function useVoiceRecorder() {
-  const [state, setState] = useState<RecordingState>("idle");
-  const mediaRecorderRef = useRef<MediaRecorder | null>(null);
-  const chunksRef = useRef<Blob[]>([]);
-
-  const startRecording = useCallback(async (): Promise<void> => {
-    const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-    const recorder = new MediaRecorder(stream, {
-      mimeType: "audio/webm;codecs=opus",
-    });
-
-    mediaRecorderRef.current = recorder;
-    chunksRef.current = [];
-
-    recorder.ondataavailable = (e) => {
-      if (e.data.size > 0) chunksRef.current.push(e.data);
-    };
-
-    recorder.start(100); // Collect chunks every 100ms
-    setState("recording");
-  }, []);
-
-  const stopRecording = useCallback((): Promise<Blob> => {
-    return new Promise((resolve) => {
-      const recorder = mediaRecorderRef.current;
-      if (!recorder || recorder.state !== "recording") {
-        resolve(new Blob());
-        return;
-      }
-
-      recorder.onstop = () => {
-        const blob = new Blob(chunksRef.current, { type: "audio/webm" });
-        recorder.stream.getTracks().forEach((t) => t.stop());
-        setState("stopped");
-        resolve(blob);
-      };
-
-      recorder.stop();
-    });
-  }, []);
-
-  return { state, startRecording, stopRecording };
-}
+export { decodePCM16ToFloat32, createAudioPlaybackContext } from "./audio-utils";
+export { useVoiceRecorder, type RecordingState } from "./useVoiceRecorder";
+export { useAudioPlayback, type PlaybackState } from "./useAudioPlayback";
+export { useVoiceStream } from "./useVoiceStream";
 

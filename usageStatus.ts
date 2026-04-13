@@ -5,8 +5,183 @@
  * API specification
  * OpenAPI spec version: 0.1.0
  */
+import * as zod from "zod";
 
 /**
- * Opaque session token — `Bearer <sid>`.
+ * Returns server health status
+ * @summary Health check
  */
-export type AuthorizationSessionHeaderParameter = string;
+export const HealthCheckResponse = zod.object({
+  status: zod.string(),
+});
+
+/**
+ * @summary Get the currently authenticated user
+ */
+export const GetCurrentAuthUserHeader = zod.object({
+  Authorization: zod
+    .string()
+    .optional()
+    .describe("Opaque session token — `Bearer <sid>`."),
+});
+
+export const GetCurrentAuthUserResponse = zod.object({
+  user: zod.union([
+    zod.object({
+      id: zod.string(),
+      email: zod.string().email().nullable(),
+      firstName: zod.string().nullable(),
+      lastName: zod.string().nullable(),
+      profileImageUrl: zod.string().nullable(),
+    }),
+    zod.null(),
+  ]),
+});
+
+/**
+ * @summary Start the browser OIDC login flow
+ */
+export const BeginBrowserLoginQueryParams = zod.object({
+  returnTo: zod.coerce.string().optional(),
+});
+
+/**
+ * @summary Complete the browser OIDC login flow
+ */
+export const HandleBrowserLoginCallbackQueryParams = zod.object({
+  code: zod.coerce.string().optional(),
+  state: zod.coerce.string().optional(),
+  iss: zod.coerce.string().optional(),
+});
+
+/**
+ * @summary Clear the session and begin OIDC logout
+ */
+export const LogoutBrowserSessionHeader = zod.object({
+  Authorization: zod
+    .string()
+    .optional()
+    .describe("Opaque session token — `Bearer <sid>`."),
+});
+
+/**
+ * @summary Exchange a mobile OIDC code for a session token
+ */
+
+export const ExchangeMobileAuthorizationCodeBody = zod.object({
+  code: zod.string().min(1),
+  code_verifier: zod.string().min(1),
+  redirect_uri: zod.string().url().min(1),
+  state: zod.string().min(1),
+  nonce: zod.string().min(1).optional(),
+});
+
+export const ExchangeMobileAuthorizationCodeResponse = zod.object({
+  token: zod.string(),
+});
+
+/**
+ * @summary Delete a mobile session token
+ */
+export const LogoutMobileSessionHeader = zod.object({
+  Authorization: zod
+    .string()
+    .optional()
+    .describe("Opaque session token — `Bearer <sid>`."),
+});
+
+export const LogoutMobileSessionResponse = zod.object({
+  success: zod.boolean(),
+});
+
+/**
+ * @summary Get current user profile
+ */
+export const GetProfileResponse = zod.object({
+  userId: zod.string(),
+  planTier: zod.enum(["free", "premium"]),
+  displayName: zod.string().nullable(),
+  email: zod.string().nullable(),
+  firstName: zod.string().nullable(),
+  lastName: zod.string().nullable(),
+  profileImageUrl: zod.string().nullable(),
+});
+
+/**
+ * @summary Update current user profile
+ */
+export const UpdateProfileBody = zod.object({
+  displayName: zod.string().optional(),
+});
+
+export const UpdateProfileResponse = zod.object({
+  userId: zod.string(),
+  planTier: zod.enum(["free", "premium"]),
+  displayName: zod.string().nullable(),
+  email: zod.string().nullable(),
+  firstName: zod.string().nullable(),
+  lastName: zod.string().nullable(),
+  profileImageUrl: zod.string().nullable(),
+});
+
+/**
+ * @summary Get today's usage count
+ */
+export const GetUsageResponse = zod.object({
+  postsUsed: zod.number(),
+  planTier: zod.enum(["free", "premium"]),
+  limitReached: zod.boolean(),
+});
+
+/**
+ * @summary Increment today's post usage count
+ */
+export const IncrementUsageResponse = zod.object({
+  postsUsed: zod.number(),
+  planTier: zod.enum(["free", "premium"]),
+  limitReached: zod.boolean(),
+});
+
+/**
+ * @summary Upgrade to premium (demo mode)
+ */
+export const UpgradePlanResponse = zod.object({
+  userId: zod.string(),
+  planTier: zod.enum(["free", "premium"]),
+  displayName: zod.string().nullable(),
+  email: zod.string().nullable(),
+  firstName: zod.string().nullable(),
+  lastName: zod.string().nullable(),
+  profileImageUrl: zod.string().nullable(),
+});
+
+/**
+ * @summary Downgrade to free plan (demo mode)
+ */
+export const DowngradePlanResponse = zod.object({
+  userId: zod.string(),
+  planTier: zod.enum(["free", "premium"]),
+  displayName: zod.string().nullable(),
+  email: zod.string().nullable(),
+  firstName: zod.string().nullable(),
+  lastName: zod.string().nullable(),
+  profileImageUrl: zod.string().nullable(),
+});
+
+/**
+ * @summary Get AI-style help response
+ */
+export const GetHelpBody = zod.object({
+  question: zod.string(),
+});
+
+export const GetHelpResponse = zod.object({
+  answer: zod.string(),
+});
+
+/**
+ * @summary Delete the current user account
+ */
+export const DeleteAccountResponse = zod.object({
+  success: zod.boolean(),
+});

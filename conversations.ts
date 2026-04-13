@@ -5,19 +5,10 @@
  * API specification
  * OpenAPI spec version: 0.1.0
  */
-import type { UserProfilePlanTier } from "./userProfilePlanTier";
+import type { UsageStatusPlanTier } from "./usageStatusPlanTier";
 
-export interface UserProfile {
-  userId: string;
-  planTier: UserProfilePlanTier;
-  /** @nullable */
-  displayName: string | null;
-  /** @nullable */
-  email: string | null;
-  /** @nullable */
-  firstName: string | null;
-  /** @nullable */
-  lastName: string | null;
-  /** @nullable */
-  profileImageUrl: string | null;
+export interface UsageStatus {
+  postsUsed: number;
+  planTier: UsageStatusPlanTier;
+  limitReached: boolean;
 }
