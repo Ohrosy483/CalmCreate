@@ -320,7 +320,7 @@ npm run dev
 ## Screenshots
 
 ### Login and authentication
-![Login and authentication](./screenshots/02-login-auth.png)
+![Login and authentication](./02-login-auth.png)
 
 ### Onboarding – business type selection
 ![Business type selection](screenshots/03-onboarding-business-type.png)
